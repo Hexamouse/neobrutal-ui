@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = ({ isDarkMode }) => {
   return (
     <footer
-      className={`py-4 ${isDarkMode ? 'bg-[#212121] text-white' : 'bg-white text-black'} border-t-2 ${isDarkMode ? 'border-black' : 'border-[#333]'} mt-auto overflow-x-hidden`}
+      className={`py-4 ${isDarkMode ? 'bg-[#212121] text-white' : 'bg-white text-black'} border-t-2 ${isDarkMode ? 'border-black' : 'border-[black]'} mt-auto overflow-x-hidden`}
     >
       <div className="w-full md:w-[70%] mx-auto flex flex-col items-center md:flex-row justify-between px-4 md:px-0">
         {/* Text Footer */}
