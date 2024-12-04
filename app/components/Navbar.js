@@ -113,8 +113,8 @@ export default function Navbar() {
                 className={`absolute left-0 mt-2 w-40 bg-white border border-black rounded-md shadow-lg transform transition-all duration-200 ease-in-out
                   ${isGuildOpen ? 'opacity-100 translate-y-0 z-50' : 'opacity-0 translate-y-2 pointer-events-none'}`}
               >
-                <a href="../Guild/FactionPoint" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Faction Point</a>
-                <a href="../Guild/Top10" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Guild Top 10</a>
+                <a href="/" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Faction Point</a>
+                <a href="/" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Guild Top 10</a>
               </div>
             </div>
           </div>
