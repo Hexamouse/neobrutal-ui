@@ -18,9 +18,9 @@ export default function AuthLogin() {
     return (
         <div className="min-h-screen flex items-center justify-center relative">
             {/* Background image with grayscale effect */}
-            <div 
+            <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ 
+                style={{
                     backgroundImage: 'url(/images/banner.png)', // Ganti dengan path gambar Anda
                     filter: 'grayscale(100%)' // Menambahkan efek hitam putih pada gambar latar belakang
                 }}
@@ -57,9 +57,9 @@ export default function AuthLogin() {
                     <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center">
                             <Checkbox
-                                item="Ingat Password" 
+                                item="Ingat Password"
                                 checked={rememberMe}
-                                onChange={() => setRememberMe(!rememberMe)} 
+                                onChange={() => setRememberMe(!rememberMe)}
                             />
                         </div>
                         <a href="#" className="text-sm hover:underline">Lupa Password?</a>
@@ -71,6 +71,16 @@ export default function AuthLogin() {
                     >
                         Log In
                     </Button>
+
+                    {/* Back to Home link with SVG on the left */}
+                    <div className="mt-6 flex items-center justify-center">
+                        <a href="/" className="text-sm text-white hover:underline flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="h-5 w-5 mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+                            </svg>
+                            Back to Home
+                        </a>
+                    </div>
                 </form>
             </div>
         </div>
