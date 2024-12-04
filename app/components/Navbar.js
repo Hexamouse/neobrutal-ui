@@ -66,8 +66,8 @@ export default function Navbar() {
 
           {/* Navbar Links (hidden in mobile) */}
           <div className="flex space-x-10 hidden lg:flex">
-            <a href="#" className="text-lg text-gray-800 hover:text-gray-600 transition-all">Home</a>
-            <a href="#" className="text-lg text-gray-800 hover:text-gray-600 transition-all">News</a>
+            <a href="/" className="text-lg text-gray-800 hover:text-gray-600 transition-all">Home</a>
+            <a href="../News" className="text-lg text-gray-800 hover:text-gray-600 transition-all">News</a>
 
             {/* Dropdown for Rank */}
             <div className="relative">
@@ -84,7 +84,7 @@ export default function Navbar() {
                 className={`absolute left-0 mt-2 w-40 bg-white border border-black rounded-md shadow-lg transform transition-all duration-200 ease-in-out
                   ${isRankOpen ? 'opacity-100 translate-y-0 z-50' : 'opacity-0 translate-y-2 pointer-events-none'}`}
               >
-                <a href="#" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">
+                <a href="../Rank/WinLose/" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">
                   Win/Lose
                   {/* Fixed SVG Icon */}
                   {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-4 w-5 h-5">
@@ -92,9 +92,9 @@ export default function Navbar() {
                     <path d="M7 17 17 7"></path>
                   </svg> */}
                 </a>
-                <a href="#" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Faction Point</a>
-                <a href="#" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">EXP</a>
-                <a href="#" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Playtime</a>
+                <a href="../Rank/FactionPoint" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Faction Point</a>
+                <a href="../Rank/EXP" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">EXP</a>
+                <a href="../Rank/Playtime" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Playtime</a>
               </div>
             </div>
 
@@ -113,8 +113,8 @@ export default function Navbar() {
                 className={`absolute left-0 mt-2 w-40 bg-white border border-black rounded-md shadow-lg transform transition-all duration-200 ease-in-out
                   ${isGuildOpen ? 'opacity-100 translate-y-0 z-50' : 'opacity-0 translate-y-2 pointer-events-none'}`}
               >
-                <a href="#" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Faction Point</a>
-                <a href="#" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Guild Top 10</a>
+                <a href="../Guild/FactionPoint" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Faction Point</a>
+                <a href="../Guild/Top10" className="px-6 py-2 text-gray-800 hover:bg-[#88AAEE] border-b-2 border-black block">Guild Top 10</a>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
             <span>{currentTime}</span>
             <span>{currentDate}</span>
           </div>
-          <a href="../Download" target="_blank" rel="noopener noreferrer">
+          <a href="../Download">
             <Button>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 mr-2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -158,7 +158,7 @@ export default function Navbar() {
             <span>Discord</span>
           </Button>
 
-          <a href="#" className="text-lg text-white bg-black border-2 border-solid border-black transition-all h-full px-8 py-6">
+          <a href="../Auth/Login" className="text-lg text-white bg-black border-2 border-solid border-black transition-all h-full px-8 py-6">
             Login
           </a>
         </div>
@@ -176,8 +176,8 @@ export default function Navbar() {
             </svg>
           </button>
           <div className="mt-10">
-            <a href="#" className="block text-lg text-gray-800 py-2">Home</a>
-            <a href="#" className="block text-lg text-gray-800 py-2">News</a>
+            <a href="../page.js" className="block text-lg text-gray-800 py-2">Home</a>
+            <a href="../News" className="block text-lg text-gray-800 py-2">News</a>
             <a href="#" className="block text-lg text-gray-800 py-2">Rank</a>
             <a href="#" className="block text-lg text-gray-800 py-2">Guild</a>
             <a href="#" className="block text-lg text-gray-800 py-2">Download</a>

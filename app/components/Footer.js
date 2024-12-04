@@ -45,9 +45,7 @@ const Footer = ({ isDarkMode }) => {
         <div className="flex items-center">
           {/* FAQ Link with SVG */}
           <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="../FAQ"
             className="flex items-center text-sm text-black"
           >
             FAQ
@@ -69,9 +67,7 @@ const Footer = ({ isDarkMode }) => {
           <span className="mx-2">|</span>
           {/* DMCA Link with Image */}
           <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="../DMCA"
             className="flex items-center text-sm text-black"
           >
             DMCA
