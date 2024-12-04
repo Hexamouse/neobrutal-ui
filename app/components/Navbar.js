@@ -182,7 +182,7 @@ export default function Navbar() {
             <a href="#" className="block text-lg text-gray-800 py-2">Guild</a>
             <a href="#" className="block text-lg text-gray-800 py-2">Download</a>
             <a href="#" className="block text-lg text-gray-800 py-2">Discord</a>
-            <a href="#" className="block text-lg text-gray-800 py-2">Login</a>
+            <a href="../Auth/Login" className="block text-lg text-gray-800 py-2">Login</a>
           </div>
         </div>
       </div>
