@@ -41,7 +41,7 @@ export default function AuthLogin() {
                         />
                     </div>
 
-                    <div className="mb-8 text-left">
+                    <div className="mb-4 text-left">
                         <label htmlFor="password" className="block text-sm font-semibold text-white uppercase mb-2">Password</label>
                         <Input
                             type="password"
@@ -54,7 +54,7 @@ export default function AuthLogin() {
                     </div>
 
                     {/* Checkbox for "Ingat Password" */}
-                    <div className="flex items-center justify-between mb-6 mt-8">
+                    <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center">
                             <Checkbox
                                 item="Ingat Password" 
@@ -62,7 +62,7 @@ export default function AuthLogin() {
                                 onChange={() => setRememberMe(!rememberMe)} 
                             />
                         </div>
-                        <a href="#" className="text-sm text-pink-500 hover:underline">Lupa Password?</a>
+                        <a href="#" className="text-sm hover:underline">Lupa Password?</a>
                     </div>
 
                     <Button
