@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center h-full max-w-full">
         {/* Logo and Navbar Links */}
         <div className="flex items-center space-x-6">
-          <h1 className="text-2xl font-bold text-gray-800">Sentinel Project</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Neobrutalism</h1>
 
           {/* Navbar Links (hidden in mobile) */}
           <div className="flex space-x-10 hidden lg:flex">
