@@ -27,16 +27,14 @@ export default function Download() {
       </div>
 
       <div className="container mx-auto p-6 mt-10 ">
-        <h1 className="text-4xl font-semibold text-center text-black mb-8">Download Files</h1>
+        <h1 className="text-4xl font-semibold text-center text-black mb-8">Download</h1>
 
-        {/* Tabel untuk Files Umum */}
-        <h2 className="text-2xl font-semibold text-center text-black mb-6">General Files</h2>
         <table className="w-full table-auto bg-white border-2 border-black shadow-md mb-8">
           <thead>
             <tr className="bg-[#F8F9FA] text-gray-700 border-2 border-black">
-              <th className="p-4 text-center text-lg font-semibold w-1/3">Nama File</th>
-              <th className="p-4 text-center text-lg font-semibold w-1/3">Ukuran</th>
-              <th className="p-4 text-center text-lg font-semibold w-1/3">Aksi</th>
+              <th className="p-4 text-center text-lg font-semibold w-1/3">File Name</th>
+              <th className="p-4 text-center text-lg font-semibold w-1/3">Size</th>
+              <th className="p-4 text-center text-lg font-semibold w-1/3">Option</th>
             </tr>
           </thead>
           <tbody>
@@ -62,9 +60,9 @@ export default function Download() {
         <table className="w-full table-auto bg-white border-2 border-black shadow-md mb-10">
           <thead>
             <tr className="bg-[#F8F9FA] text-gray-700 border-2 border-black">
-              <th className="p-4 text-center text-lg font-semibold w-1/3">Nama Tool</th>
-              <th className="p-4 text-center text-lg font-semibold w-1/3">Ukuran</th>
-              <th className="p-4 text-center text-lg font-semibold w-1/3">Aksi</th>
+              <th className="p-4 text-center text-lg font-semibold w-1/3">Tools Name</th>
+              <th className="p-4 text-center text-lg font-semibold w-1/3">Size</th>
+              <th className="p-4 text-center text-lg font-semibold w-1/3">Option</th>
             </tr>
           </thead>
           <tbody>
