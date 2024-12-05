@@ -26,7 +26,6 @@ export default function Navbar() {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  // Update the time every second
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
@@ -35,25 +34,21 @@ export default function Navbar() {
       const seconds = String(now.getSeconds()).padStart(2, '0');
       const ampm = hours >= 12 ? 'PM' : 'AM';
 
-      // Convert hours to 12-hour format
       hours = hours % 12;
-      hours = hours ? String(hours).padStart(2, '0') : '12'; // 0 becomes 12 for 12 AM
+      hours = hours ? String(hours).padStart(2, '0') : '12';
       setCurrentTime(`${hours}:${minutes}:${seconds} ${ampm}`);
 
       const day = String(now.getDate()).padStart(2, '0');
-      const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+      const month = String(now.getMonth() + 1).padStart(2, '0');
       const year = now.getFullYear();
-      const dayOfWeek = now.toLocaleString('en-US', { weekday: 'long' }); // Get full weekday name
+      const dayOfWeek = now.toLocaleString('en-US', { weekday: 'long' });
       setCurrentDate(`${dayOfWeek}, ${day}-${month}-${year}`);
     };
 
-    // Initial time and date update
     updateTime();
 
-    // Update every second
     const intervalId = setInterval(updateTime, 1000);
 
-    // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 

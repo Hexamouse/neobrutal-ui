@@ -13,7 +13,7 @@ export default function Input({ className, value, setValue, placeholder, type = 
     <div className="relative">
       <input
         className={cn(
-          'rounded-base bg-white dark:bg-secondaryBlack border-1 p-[10px] font-base',
+          'rounded-base bg-white border-1 p-[10px] font-base',
           className
         )}
         type={showPassword ? "text" : type} // Tampilkan password jika showPassword true

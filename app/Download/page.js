@@ -5,17 +5,17 @@ import Footer from '@/app/components/Footer';
 import Button from '../components/Button';  // Pastikan Button sudah diimpor dengan benar
 
 const files = [
-  { name: 'File 1', size: '10 MB', link: '/files/file1.zip' },
-  { name: 'File 2', size: '25 MB', link: '/files/file2.zip' },
-  { name: 'File 3', size: '5 MB', link: '/files/file3.zip' },
-  { name: 'File 4', size: '50 MB', link: '/files/file4.zip' },
+  { name: 'File 1', size: '10 MB', link: '/file/file1.zip' },
+  { name: 'File 2', size: '25 MB', link: '/file/file2.zip' },
+  { name: 'File 3', size: '5 MB', link: '/file/file3.zip' },
+  { name: 'File 4', size: '50 MB', link: '/file/file4.zip' },
 ];
 
 const tools = [
-  { name: 'VC++ Runtime', size: '20 MB', link: '/tools/vc_runtime.exe' },
-  { name: 'DirectX', size: '100 MB', link: '/tools/directx_installer.exe' },
-  { name: 'Microsoft .NET Framework', size: '50 MB', link: '/tools/dotnet_installer.exe' },
-  { name: 'Java Runtime', size: '80 MB', link: '/tools/java_runtime.exe' },
+  { name: 'VC++ Runtime', size: '20 MB', link: '/file/vc_runtime.exe' },
+  { name: 'DirectX', size: '100 MB', link: '/file/directx_installer.exe' },
+  { name: 'Microsoft .NET Framework', size: '50 MB', link: '/file/dotnet_installer.exe' },
+  { name: 'Java Runtime', size: '80 MB', link: '/file/java_runtime.exe' },
 ];
 
 export default function Download() {
@@ -26,7 +26,7 @@ export default function Download() {
         <Navbar />
       </div>
 
-      <div className="container mx-auto p-6 mt-10">
+      <div className="container mx-auto p-6 mt-10 ">
         <h1 className="text-4xl font-semibold text-center text-black mb-8">Download Files</h1>
 
         {/* Tabel untuk Files Umum */}
