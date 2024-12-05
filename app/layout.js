@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";  // Import Vercel Analytics
 import "./globals.css";
 
 const DMSans_Reg = localFont({
@@ -6,7 +7,6 @@ const DMSans_Reg = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-
 
 export const metadata = {
   title: "Create Next App",
@@ -16,10 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${DMSans_Reg.variable} ${DMSans_Reg.variable} antialiased`}
-      >
+      <body className={`${DMSans_Reg.variable} ${DMSans_Reg.variable} antialiased`}>
         {children}
+
+        {/* Add Analytics component here to enable analytics tracking */}
+        <Analytics />
       </body>
     </html>
   );
